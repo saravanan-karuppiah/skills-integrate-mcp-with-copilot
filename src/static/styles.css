@@ -16,12 +16,40 @@ body {
 }
 
 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
   text-align: center;
   padding: 20px 0;
   margin-bottom: 30px;
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+}
+
+.admin-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.admin-controls button {
+  background-color: white;
+  color: #1a237e;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.login-panel {
+  margin: 0 auto 30px;
+  max-width: 500px;
+}
+
+.login-panel h3 {
+  margin-bottom: 20px;
+  color: #1a237e;
 }
 
 header h1 {
@@ -190,6 +218,12 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
 }
 
 footer {
